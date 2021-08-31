@@ -52,6 +52,22 @@
 <p> 3. DNS에서 받은 IP 주소를 통해 hackr.kr 웹 페이지에 접속 </p>
 </details>
 
+### 1.4 URI와 URL  
+- URI(Uniform Resource Identifier) : 인터넷상 표현할수 있는 모든 리소스를 의미. (URL, URN)
+- URL(Uniform Resource Locator) : URI에서 네트워크상 경로, 어떤 자원의 위치에 대한 절대경로값을 지닌 문자열를 의미.
+- URN은 거의 쓰지 않아 보통 URI = URL이라 생각하면 됨.  
+
+<details>
+<summary>URL 포맷</summary>  
+</br>
+# 1. 송신 측에서 도메인 명을 통해 hackr.kr 웹 페이지에 접속 요청 
+
+<p> 1. 송신 측에서 도메인 명을 통해 hackr.kr 웹 페이지에 접속 요청 </p>
+<p> 2. DNS는 도메인 명을 받아 hackr.kr IP 주소를 송신 측에 전달 </p>
+<p> 3. DNS에서 받은 IP 주소를 통해 hackr.kr 웹 페이지에 접속 </p>
+</details>
+
+
 <details>
 <summary>1.1 HTTP</summary>  
 </br>
