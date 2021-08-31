@@ -91,18 +91,35 @@
 - 클라이언트는 리소스를 호출할 때 Request 메시지 안에 URI를 포함해야 한다.  
 
 ### 2-5 HTTP 메소드  
-- 1. GET: 서버에 리퀘스트 URI로 식별된 리소스를 가져올 수 있도록 요구  
-- 2. POST : 서버에 엔티티를 전송하기 위한 메소드  
-- 3. PUT : 서버에 파일을 전송하기 위해서 사용. 인증 없이 눈구든지 파일 업로드가 가능해 보안 상의 문제 존재  
-- 4. HEAD : GET과 같은 기능이지만 메시지 바디는 돌려주지 않음. URI 유효성과 리소스 갱신 시간을 확인하는 목적으로 사용.  
-- 5. DELETE : 파일을 삭제하기 위해 사용.  
-
+1. GET: 서버에 리퀘스트 URI로 식별된 리소스를 가져올 수 있도록 요구  
+2. POST : 서버에 엔티티를 전송하기 위한 메소드  
+3. PUT : 서버에 파일을 전송하기 위해서 사용. 인증 없이 눈구든지 파일 업로드가 가능해 보안 상의 문제 존재  
+4. HEAD : GET과 같은 기능이지만 메시지 바디는 돌려주지 않음. URI 유효성과 리소스 갱신 시간을 확인하는 목적으로 사용.  
+5. DELETE : 파일을 삭제하기 위해 사용.  
 
 <details>
   <summary>GET, POST</summary>
 
   ### 1. GET  
-  - 
+  - Request Message  
+  GET /index.html HTTP /1.1  
+  Host : www.hackr.kr  
+  if-Modified-Since : Thu. 12 Jul 2012 07:30:0 GMT  
+  
+  - Response Message  
+  index.html 리소스가 2012년 7월 12일 7시 30분 이후에 갱신된 경우에만 리퀘스트 URI에 있는 index.html을 보낸다.  
+  이외에는 304 Not Modified Response를 보낸다.  
+
+  
+  ### 2. POST  
+  - Request Message  
+  POST /submit.cgi HTTP /1.1  
+  Host : www.hackr.jp  
+  Content-Length: 1560 (1560바이트 데이터)  
+  
+  - Response Message  
+  - submit.cgi가 수신한 데이터의 처리한 결과를 돌려준다.  
+  
 
 </details> 
 
