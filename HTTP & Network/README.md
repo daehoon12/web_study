@@ -25,6 +25,20 @@
 
 ### 1.3 IP/TCP/DNS  
 
+#### 1.3.1 IP  
+- IP주소와 MAC 주소를 통해 개개의 패킷을 상대방에게 전달하는 프로토콜.  
+- IP 주소는 각 노드에 부여된 주소, MAC 주소는 NIC에 할당된 고유의 주소. IP 주소는 변경이 가능하지만 MAC 주소는 변경이 불가능하다.  
+- ARP (Address Resolution Protocol)을 사용해 IP 주소를 바탕으로 보낼 MAC 주소를 조사.  
+
+#### 1.3.2 TCP  
+- 신뢰성 있는 데이터 전송 서비스를 제공.  
+- 데이터를 확실하게 보내기 위해 **3 way handshaking** 사용.  
+<details>
+<summary>**3 way handshaking**</summary>  
+</br>
+<p> - 송신측에서 수신측에 접속함과 동시에 SYN 플래그를 보내면, 수신측에서는 송신측으로 접속과 동시에 SYN/ACK 플래그로 패킷을 수신했다고 알린다. 마지막으로 송신측에서 ACK 플래그를 보냄으로 패킷 교환이 완료되었음을 알림 </p>    
+</details>
+
 
 
   
