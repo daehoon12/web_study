@@ -9,10 +9,9 @@
 <p> - 처음 나올 당시에는 주로 텍스트를 전송. 지금은 그림 동영상 뿐 아니라 웹이라는 틀을 넘어 다양하게 사용되고 있음.</p>    
 </details>
 
-
-### 1.2 TCP/IP  
-<details>
   
+<details>
+  <summary>1.2 TCP/IP</summray>
 </details>
 <details>
   <summary>웹 통신의 큰 흐름: https://www&#46;google&#46;com/ 을 접속할 때 일어나는 일</summary>
