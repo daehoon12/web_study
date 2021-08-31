@@ -59,7 +59,6 @@
 
 <details>
   <summary>URL 포맷</summary>
-</br>  
 
 ### http://user:pass@www.example.kr:80/dir/index.htm?uid=1#ch1  
 
