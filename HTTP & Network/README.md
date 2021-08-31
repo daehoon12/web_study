@@ -118,7 +118,7 @@
   Content-Length: 1560 (1560바이트 데이터)  
   
   - Response Message  
-  - submit.cgi가 수신한 데이터의 처리한 결과를 돌려준다.  
+  submit.cgi가 수신한 데이터의 처리한 결과를 돌려준다.  
   
 
 </details> 
