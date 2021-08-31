@@ -59,7 +59,8 @@
 
 <details>
 <summary>URL 포맷</summary>  
-</br>
+</br>  
+
 ### http://user:pass@www.example.kr:80/dir/index.htm?uid=1#ch1  
 
 1. 스키마 (http:): http:, data: 같은 스키마를 사용해 **리소스를 얻기 위해 사용하는 프로토콜을 지시**  
