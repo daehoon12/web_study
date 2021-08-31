@@ -101,15 +101,8 @@
 <details>
   <summary>GET, POST</summary>
 
-### http://user:pass@www.example.kr:80/dir/index.htm?uid=1#ch1  
-
-1. 스키마 (http:): http:, data: 같은 스키마를 사용해 **리소스를 얻기 위해 사용하는 프로토콜을 지시**  
-2. 자격정보 (user:pass) : 서버로부터 리소스를 취득하기 위해 유저명과 패스워드를 지정. (Optional)  
-3. 서버 주소(www.example.kr) : DNS 이름이나 IP 주소  
-4. 서버 포트 (80) : 서버의 접속 대상이 되는 네트워크 포트 번호 지정 (Optional, Default=80)  
-5. 계층적 파일 경로 (dir/index.htm) : 특정 리소스를 식별하기 위해 서버 상의 파일 패스를 지정. UNIX의 디렉토리 지정 방식과 비슷.  
-6. 쿼리 문자열 (uid=1) : 파일 경로에 지정된 리소스에 파라미터를 넘겨주기 위해 사용. (Optional)  
-7. 프레그멘트 식별자 (ch1) : 얻은 리소스에서 서브 리소스를 가리키기 위해 사용 (Optional)  
+  ### 1. GET  
+  - 
 
 </details> 
 
