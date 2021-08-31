@@ -12,6 +12,6 @@
   
 <details>
 <summary>1.2 TCP/IP</summray> 
-</br>
+</br>  
 <p> - 인터넷에서 컴퓨터들이 서로 정보를 주고받는 데 쓰이는 통신규약(프로토콜)의 모음.</p>  
 <details>
