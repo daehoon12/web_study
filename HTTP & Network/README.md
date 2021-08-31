@@ -84,6 +84,7 @@
 ### 2-3. HTTP는 상태를 유지하지 않는 프로토콜 (Stateless)  
 - HTTP는 상태를 계속 유지하지 않는 Stateless 프로토콜  
 - 이전에 보냈던 Request나 Response에 대해서 전혀 기억하지 않음.  
+- 서버, CPU, 메모리 같은 자원 절약  
 - HTTP/1.1에서 로그인 같이 상태를 계속 유지해야하는 특성에 대해 쿠키(Cookie)라는 기술이 도입.  
 
 ### 2-4. Request URI로 리소스를 식별  
@@ -96,6 +97,7 @@
 3. PUT : 서버에 파일을 전송하기 위해서 사용. 인증 없이 눈구든지 파일 업로드가 가능해 보안 상의 문제 존재  
 4. HEAD : GET과 같은 기능이지만 메시지 바디는 돌려주지 않음. URI 유효성과 리소스 갱신 시간을 확인하는 목적으로 사용.  
 5. DELETE : 파일을 삭제하기 위해 사용.  
+
 
 <details>
   <summary>GET, POST</summary>
@@ -123,6 +125,28 @@
 
 </details> 
 
+### 2-6 지속 연결로 접속량을 절약  
+- HTTP 발전에 따라 리퀘스트의 송신도 나날이 늘어남. 예를 들어 하나의 html에 여러 이미지가 포함되어 있는 경우 HTML 문서에 있는 이미지를 획득할 때 마다 Request 메시지를 송신. 이는 **매번 TCP 연결과 종료를 하게 되어 Overhead가 증가.**  
+
+#### 2-6-1. 지속 연결  
+- 어느 한 쪽이 명시적으로 연결을 종료하지 않는 이상 TCP 연결을 계속 유지  
+- HTTP/1.1에서 표준 동작  
+- 서버는 데이터를 HTML에 있는 데이터를 다 보내면 **4 wawys handshaking으로 연결을 종료**  
+
+#### 2-6-2. 파이프라인  
+- 이전에는 Request 송신 후에 Response를 수신할 때 까지 기다리는 것이 아니라, 기다리지 않고 바로 다음 Request 메시지를 서버에 보내는 방식.  
+
+### 2-7 쿠키를 사용한 상태 관리  
+- HTTP는 **Stateles Protocol** -> 과거에 교환한 Response와 Request를 관리하지 않음.  
+- 과거 상태를 바탕으로 현재 Request(로그인, 인증 등)를 처리하기 위해 쿠키(Cookie)라는 시스템이 도입  
+
+<details>
+<summary>쿠키의 동작 방식</summary>  
+</br>
+1. 최초로 클라이언트가 서버에게 Request 메시지 송신.  
+2. 서버는 Response 메시지에 있는 Set-Cookie라는 헤더에 쿠키를 붙여서 클라이언트에게 송신.  
+3. 이후 클라이언트는 Request 메시지에 쿠키를 붙여서 서버에 송신.  
+</details>
 
 <details>
 <summary>1.1 HTTP</summary>  
