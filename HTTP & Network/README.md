@@ -61,12 +61,12 @@
 <summary>URL 포맷</summary>  
 </br>
 
-# 1. 송신 측에서 도메인 명을 통해 hackr.kr 웹 페이지에 접속 요청 
+#### http://user:pass@www.example.kr:80/dir/index.htm?uid=1#ch1  
 
-<p> 1. 송신 측에서 도메인 명을 통해 hackr.kr 웹 페이지에 접속 요청 </p>
-<p> 2. DNS는 도메인 명을 받아 hackr.kr IP 주소를 송신 측에 전달 </p>
-<p> 3. DNS에서 받은 IP 주소를 통해 hackr.kr 웹 페이지에 접속 </p>
-</details>
+1. 송신 측에서 도메인 명을 통해 hackr.kr 웹 페이지에 접속 요청  
+2. DNS는 도메인 명을 받아 hackr.kr IP 주소를 송신 측에 전달  
+3. DNS에서 받은 IP 주소를 통해 hackr.kr 웹 페이지에 접속  
+</details> 
 
 
 <details>
