@@ -58,7 +58,7 @@
 - URN은 거의 쓰지 않아 보통 URI = URL이라 생각하면 됨.  
 
 <details>
-<summary>URL 포맷</summary>  
+  <summary>URL 포맷</summary>
 </br>  
 
 ### http://user:pass@www.example.kr:80/dir/index.htm?uid=1#ch1  
